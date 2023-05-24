@@ -8,7 +8,7 @@ const Portofolio = () => {
         </div>
         <div>
           <p>
-            I'm a developer with 3 year experience, speciality in developing
+            I am a developer with 3 year experience, speciality in developing
             E-commerce apps for several companies. currently working as a
             backend Engineer remotely from Malang East Java.
           </p>
