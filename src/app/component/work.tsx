@@ -4,7 +4,7 @@ const Work = () => {
       <div className="container py-14 p-2">
         <div>
           {" "}
-          <span>Work</span>{" "}
+          <span>Work Experience</span>{" "}
         </div>
         <div>
           <p>I am a Developer with 3 year Experience</p>
