@@ -10,13 +10,15 @@ const Li = (params) => {
   );
 };
 
+let copy = [%raw {|'\u00a9'|}];
+
 const Footer = () => {
   return (
     <footer id="Footer" className="px-32 items-center w-full">
       <div className="container p-2 text-center">
         <p>
-          Design <b>by</b> Mesin Merayap. Created <b>by</b> Abdul Qhodir Zaelany
-          `&copy;` <em>{new Date().getFullYear()}</em>
+          Design <b>by</b> Mesin Merayap. Created <b>by</b> Abdul Qhodir Zaelany {copy}
+           <em>{new Date().getFullYear()}</em>
         </p>
         <div>
           <ul>
