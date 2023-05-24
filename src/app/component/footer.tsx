@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="container p-2 text-center">
         <p>
           Design <b>by</b> Mesin Merayap. Created <b>by</b> Abdul Qhodir Zaelany
-          &copy; <em>{new Date().getFullYear()}</em>
+          `&copy;` <em>{new Date().getFullYear()}</em>
         </p>
         <div>
           <ul>
