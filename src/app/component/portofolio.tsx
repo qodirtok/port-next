@@ -7,7 +7,11 @@ const Portofolio = () => {
           <span>Portofolio</span>{" "}
         </div>
         <div>
-          <p>I am a Developer with 3 year Experience</p>
+          <p>
+            I'm a developer with 3 year experience, speciality in developing
+            E-commerce apps for several companies. currently working as a
+            backend Engineer remotely from Malang East Java.
+          </p>
         </div>
       </div>
     </section>

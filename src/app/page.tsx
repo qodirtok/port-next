@@ -7,6 +7,7 @@ import About from "./component/about";
 import Portofolio from "./component/portofolio";
 import Work from "./component/work";
 import Contact from "./component/contact";
+import Footer from "./component/footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Portofolio />
       <Work />
       <Contact />
+      <Footer />
     </main>
   );
 }
