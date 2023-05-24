@@ -29,13 +29,16 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl">QHODIR</h1>
+            <h1 className="text-xl font-extrabold font-mono">ZLNS</h1>
             <ul className="flex items-center">
               <li></li>
               <li>
                 <Link
-                  className="bg-gradient-to-r from-cyan-500 to-cyan-200 text-white px-4 py-2 rounded-md ml-8"
-                  href={"#"}
+                  className="bg-gradient-to-r from-blue-500 to-blue-200 text-white px-4 py-2 rounded-md ml-8"
+                  href={
+                    "https://drive.google.com/file/d/1Mc03p_2o-hPxkWcu3ylUqMQwiwag6dsV/view?usp=sharing"
+                  }
+                  target="_blank"
                 >
                   Resume
                 </Link>
@@ -43,7 +46,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 font-medium md:text-6xl">
+            <h2 className="text-5xl py-2 font-medium md:text-6xl text-blue-500">
               Abdul Qhodir Zaelany
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl">
@@ -52,23 +55,29 @@ export default function Home() {
             <p className="text-md py-5 leading-8 md:text-xl max-w-lg mx-auto">
               I&apos;m a developer with 3 year experience, speciality in
               developing E-commerce apps for several companies. currently
-              working as a backend Engineer remotely from Malang East Java.
+              working as a backend Engineer on from{" "}
+              <span className="text-blue-400"> Malang East Java</span>.
             </p>
           </div>
           <div className="text-5xl lg:flex  lg:justify-center gap-10 py-3">
-            <Link href={"#"} target="_blank">
+            <Link
+              href={
+                "https://www.linkedin.com/in/abdul-qhodir-zaelany-4531641b2/"
+              }
+              target="_blank"
+            >
               <AiFillLinkedin />
             </Link>
-            <Link href={"#"} target="_blank">
+            <Link href={"https://github.com/qodirtok"} target="_blank">
               <AiFillGithub />
             </Link>
-            <Link href={"#"} target="_blank">
+            <Link href={"https://medium.com/@qodirtok"} target="_blank">
               <AiFillMediumSquare />
             </Link>
-            <Link href={"#"} target="_blank">
+            <Link href={"https://www.instagram.com/qodirtok/"} target="_blank">
               <AiFillInstagram />
             </Link>
-            <Link href={"#"} target="_blank">
+            <Link href={"mailto:qodirtok@gmail.com"} target="_blank">
               <AiFillMail />
             </Link>
           </div>
@@ -187,6 +196,6 @@ const ListPorto = (params) => {
 
 const rollCall = (elements) => {
   return (
-    <span className="bg-gray-400 rounded-md py-1 px-1 text-xs">{elements}</span>
+    <span className="bg-cyan-400 rounded-md py-1 px-1 text-xs">{elements}</span>
   );
 };
