@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Li = (params) => {
+const ListContact = (params) => {
   return (
     <li className="inline mx-2">
       <Link target="_blank" href={params.url}>
@@ -20,10 +20,13 @@ const Footer = () => {
         </p>
         <div>
           <ul>
-            <Li url="https://www.instagram.com/qodirtok/" name="Instagram" />
-            <Li url="https://github.com/qodirtok" name="Github" />
-            <Li url="https://medium.com/@qodirtok" name="Medium" />
-            <Li
+            <ListContact
+              url="https://www.instagram.com/qodirtok/"
+              name="Instagram"
+            />
+            <ListContact url="https://github.com/qodirtok" name="Github" />
+            <ListContact url="https://medium.com/@qodirtok" name="Medium" />
+            <ListContact
               url="https://www.linkedin.com/in/abdul-qhodir-zaelany-4531641b2/"
               name="LinkedIn"
             />
