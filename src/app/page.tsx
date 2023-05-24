@@ -95,21 +95,21 @@ export default function Home() {
             <ListService
               job="Student Intern"
               company="University Of Muhammadiyah Malang"
-              date="2020-now"
+              date="May 2015 - Aug 2015"
               about="asd"
               system={["Linux", "Debian", "Apache"]}
             />
             <ListService
               job="Student Intern"
               company="Dinas Komunikasi dan Informatika"
-              date="2020-now"
+              date="Jan 2019 - Feb 2019"
               about="asd"
               system={["PHP", "CodeIgniter", "MySQL", "JavaScript", "HTML/CSS"]}
             />
             <ListService
               job="Fulltime Software Engineer"
               company="Icube by Sirclo"
-              date="2020-now"
+              date="Jun 2020 - now"
               about="asd"
               system={[
                 "PHP",
