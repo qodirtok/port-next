@@ -53,9 +53,9 @@ export default function Home() {
               Software Engineer | Backend
             </h3>
             <p className="text-md py-5 leading-8 md:text-xl max-w-lg mx-auto">
-              I'm a developer with 3 year experience, speciality in developing
-              E-commerce apps for several companies. currently working as a
-              backend Engineer remotely from Malang East Java.
+              I&apos;m a developer with 3 year experience, speciality in
+              developing E-commerce apps for several companies. currently
+              working as a backend Engineer remotely from Malang East Java.
             </p>
           </div>
           <div className="text-5xl lg:flex  lg:justify-center gap-10 py-3">
