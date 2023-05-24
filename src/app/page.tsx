@@ -1,13 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonHTMLAttributes } from "react";
-import Header from "./component/header";
-import Banner from "./component/banner";
-import About from "./component/about";
-import Portofolio from "./component/portofolio";
-import Work from "./component/work";
-import Contact from "./component/contact";
-import Footer from "./component/footer";
 import Head from "next/head";
 import {
   AiFillTwitterCircle,
@@ -17,11 +10,15 @@ import {
   AiFillMail,
   AiFillMediumSquare,
   AiFillMediumCircle,
+  AiFillInstagram,
 } from "react-icons/ai";
+// import { useState } from "react";
 import { log } from "console";
 
 export default function Home() {
+  // const [darkMode, setDarkMode] = useState(false);
   return (
+    // <div className={darkMode ? "dark" : ""}>
     <div>
       <Head>
         <title>Abdul Qhodir Zaelany Portofolio</title>
@@ -67,6 +64,9 @@ export default function Home() {
             </Link>
             <Link href={"#"} target="_blank">
               <AiFillMediumSquare />
+            </Link>
+            <Link href={"#"} target="_blank">
+              <AiFillInstagram />
             </Link>
             <Link href={"#"} target="_blank">
               <AiFillMail />
