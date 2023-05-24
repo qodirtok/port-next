@@ -15,7 +15,10 @@ import {
   AiFillYoutube,
   AiFillGithub,
   AiFillMail,
+  AiFillMediumSquare,
+  AiFillMediumCircle,
 } from "react-icons/ai";
+import { log } from "console";
 
 export default function Home() {
   return (
@@ -50,13 +53,24 @@ export default function Home() {
               Software Engineer | Backend
             </h3>
             <p className="text-md py-5 leading-8 md:text-xl max-w-lg mx-auto">
-              about
+              I'm a developer with 3 year experience, speciality in developing
+              E-commerce apps for several companies. currently working as a
+              backend Engineer remotely from Malang East Java.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3">
-            <AiFillLinkedin />
-            <AiFillGithub />
-            <AiFillMail />
+          <div className="text-5xl lg:flex  lg:justify-center gap-10 py-3">
+            <Link href={"#"} target="_blank">
+              <AiFillLinkedin />
+            </Link>
+            <Link href={"#"} target="_blank">
+              <AiFillGithub />
+            </Link>
+            <Link href={"#"} target="_blank">
+              <AiFillMediumSquare />
+            </Link>
+            <Link href={"#"} target="_blank">
+              <AiFillMail />
+            </Link>
           </div>
           <div className="relative"></div>
         </section>
@@ -69,15 +83,34 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              {/* <div><Image /></div> */}
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              {/* <div><Image /></div> */}
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              {/* <div><Image /></div> */}
-            </div>
+            <ListService
+              job="Student Intern"
+              company="University Of Muhammadiyah Malang"
+              date="2020-now"
+              about="asd"
+              system={["Linux", "Debian", "Apache"]}
+            />
+            <ListService
+              job="Student Intern"
+              company="Dinas Komunikasi dan Informatika"
+              date="2020-now"
+              about="asd"
+              system={["PHP", "CodeIgniter", "MySQL", "JavaScript", "HTML/CSS"]}
+            />
+            <ListService
+              job="Fulltime Software Engineer"
+              company="Icube by Sirclo"
+              date="2020-now"
+              about="asd"
+              system={[
+                "PHP",
+                "Magento 2",
+                "Docker",
+                "MySQL",
+                "Graphql",
+                "Rest Api",
+              ]}
+            />
           </div>
         </section>
 
@@ -85,9 +118,75 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py1">Portofolio</h3>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap"></div>
+          <div className="lg:flex lg:mx-w-lg lg:flex-wrap lg:mx-auto gap-10">
+            <ListPorto
+              name="Sistem Perpustakaan"
+              date="2023"
+              descriptions="about"
+              system={["php", "MySQL", "Laravel", "Bootstrap"]}
+            />
+            <ListPorto
+              name="POS (AGROMART)"
+              date="2023"
+              descriptions="about"
+              system={["php", "MySQL", "CodeIgniter", "Bootstrap"]}
+            />
+            <ListPorto
+              name="POS (MIDOS)"
+              date="2023"
+              descriptions="about"
+              system={["php", "MySQL", "CodeIgniter", "Bootstrap"]}
+            />
+            <ListPorto
+              name="SPBE (Sistem Pemerintahan Berbasis Elektronik)"
+              date="2023"
+              descriptions="about"
+              system={["php", "MySQL", "CodeIgniter", "Bootstrap"]}
+            />
+            <ListPorto
+              name="SIKOPMA (Sistem Informasi Koperasi Mahasiswa)"
+              date="2023"
+              descriptions="about"
+              system={["php", "MySQL", "CodeIgniter", "Bootstrap"]}
+            />
+          </div>
         </section>
       </main>
     </div>
   );
 }
+
+const ListService = (params) => {
+  return (
+    <div className="text-center shadow-lg p-10 rounded-xl my-10">
+      {/* <div><Image /></div> */}
+      <h3 className="text-lg font-medium pt-8 pb-0">{params.job}</h3>
+      <h4 className="py-1 text-lg font-thin pt-1 pb-0">{params.company}</h4>
+      <span className="py-1 text-xs font-serif pt-1 pb-2">{params.date}</span>
+      <p className="py-1">{params.about}</p>
+      <div className="flex flex-col gap-1 py-2 lg:flex-row lg:flex-wrap">
+        {params.system.map((name) => rollCall(name))}
+      </div>
+    </div>
+  );
+};
+
+const ListPorto = (params) => {
+  return (
+    <div className="text-center shadow-lg p-10 rounded-xl my-5 ">
+      {/* <div><Image /></div> */}
+      <h3 className="text-lg font-medium pt-8 pb-0">{params.name}</h3>
+      <span className="py-1 text-xs font-serif pt-1 pb-2">{params.date}</span>
+      <p className="py-1">{params.descriptions}</p>
+      <div className="flex flex-col gap-1 py-2 lg:flex-row lg:flex-wrap">
+        {params.system.map((name) => rollCall(name))}
+      </div>
+    </div>
+  );
+};
+
+const rollCall = (elements) => {
+  return (
+    <span className="bg-gray-400 rounded-md py-1 px-1 text-xs">{elements}</span>
+  );
+};
