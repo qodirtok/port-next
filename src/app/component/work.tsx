@@ -3,8 +3,7 @@ const Work = () => {
     <section id="Work" className="px-32 w-full">
       <div className="container py-14 p-2">
         <div>
-          {" "}
-          <span>Work Experience</span>{" "}
+          <span>Work Experience</span>
         </div>
         <div>
           <p>I am a Developer with 3 year Experience</p>

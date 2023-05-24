@@ -3,8 +3,7 @@ const Portofolio = () => {
     <section id="Portofolio" className="px-32 w-full">
       <div className="container py-14 p-2">
         <div>
-          {" "}
-          <span>Portofolio</span>{" "}
+          <span>Portofolio</span>
         </div>
         <div>
           <p>

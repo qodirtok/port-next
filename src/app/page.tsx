@@ -33,21 +33,17 @@ export default function Home() {
             <ul className="flex items-center">
               <li></li>
               <li>
-                {/* <Link
+                <Link
                   className="bg-gradient-to-r from-cyan-500 to-cyan-200 text-white px-4 py-2 rounded-md ml-8"
                   href={"#"}
                 >
-                  {" "}
-                  Resume{" "}
-                </Link> */}
+                  Resume
+                </Link>
               </li>
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 font-medium">
-              {" "}
-              Abdul Qhodir Zaelany{" "}
-            </h2>
+            <h2 className="text-5xl py-2 font-medium">Abdul Qhodir Zaelany</h2>
             <h3 className="text-2xl py-2">Software Engineer | Backend</h3>
             <p className="text-md py-5 leading-8">about</p>
           </div>
@@ -56,7 +52,7 @@ export default function Home() {
             <AiFillGithub />
             <AiFillMail />
           </div>
-          <div className="relative">{/* <Image src={"#"} /> */}</div>
+          <div className="relative"></div>
         </section>
       </main>
     </div>
