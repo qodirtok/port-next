@@ -8,7 +8,7 @@ const Header = () => {
           <h1>QHODIR</h1>
         </div>
         <div className="flex flex-row p-2">
-          <ul>
+          <ul className=" mx-4">
             <Li menu="About" />
             <Li menu="Portofolio" />
             <Li menu="Work" />
@@ -22,7 +22,7 @@ const Header = () => {
 
 const Li = (params) => {
   return (
-    <li className="inline">
+    <li className="inline mx-3">
       <Link href={"#" + params.menu}>
         <span>{params.menu}</span> <span></span>
       </Link>

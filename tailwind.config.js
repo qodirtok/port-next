@@ -6,6 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    letterSpacing: {
+      widests: "2px",
+    },
     extend: {
       lineHeight: {
         "28px": "28px",
