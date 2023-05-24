@@ -26,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl">QHODIR</h1>
@@ -43,9 +43,15 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 font-medium">Abdul Qhodir Zaelany</h2>
-            <h3 className="text-2xl py-2">Software Engineer | Backend</h3>
-            <p className="text-md py-5 leading-8">about</p>
+            <h2 className="text-5xl py-2 font-medium md:text-6xl">
+              Abdul Qhodir Zaelany
+            </h2>
+            <h3 className="text-2xl py-2 md:text-3xl">
+              Software Engineer | Backend
+            </h3>
+            <p className="text-md py-5 leading-8 md:text-xl max-w-lg mx-auto">
+              about
+            </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3">
             <AiFillLinkedin />
@@ -53,6 +59,33 @@ export default function Home() {
             <AiFillMail />
           </div>
           <div className="relative"></div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className="text-3xl py1">Services</h3>
+            <p className="text-md py2 leading-8">
+              since i begining of my journey <span>agencies</span>
+            </p>
+          </div>
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              {/* <div><Image /></div> */}
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              {/* <div><Image /></div> */}
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              {/* <div><Image /></div> */}
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className="text-3xl py1">Portofolio</h3>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap"></div>
         </section>
       </main>
     </div>
