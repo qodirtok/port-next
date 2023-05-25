@@ -19,8 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="icon" href="/zln.ico" />
-        <title></title>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Portofolio</title>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
