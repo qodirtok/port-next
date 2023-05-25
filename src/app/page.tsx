@@ -28,15 +28,6 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            {/* <div>
-              <Image
-                alt="a"
-                src={"/zln.svg"}
-                width={"64"}
-                height={"64"}
-              ></Image>
-            </div> */}
-            {/* <h1 className="text-xl font-extrabold font-mono">ZLNS</h1> */}
             <h1 className="text-xl font-extrabold font-mono ">ZLNS</h1>
             <ul className="flex items-center">
               <li></li>
@@ -176,7 +167,6 @@ export default function Home() {
 const ListService = (params) => {
   return (
     <div className="text-center shadow-lg p-10 rounded-xl my-10">
-      {/* <div><Image /></div> */}
       <h3 className="text-lg font-medium pt-8 pb-0">{params.job}</h3>
       <h4 className="py-1 text-lg font-thin pt-1 pb-0">{params.company}</h4>
       <span className="py-1 text-xs font-serif pt-1 pb-2">{params.date}</span>
@@ -191,7 +181,6 @@ const ListService = (params) => {
 const ListPorto = (params) => {
   return (
     <div className="text-center shadow-lg p-10 rounded-xl my-5 ">
-      {/* <div><Image /></div> */}
       <h3 className="text-lg font-medium pt-8 pb-0">{params.name}</h3>
       <span className="py-1 text-xs font-serif pt-1 pb-2">{params.date}</span>
       <p className="py-1">{params.descriptions}</p>
