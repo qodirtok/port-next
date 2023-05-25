@@ -3,13 +3,10 @@ import Link from "next/link";
 import { ButtonHTMLAttributes } from "react";
 import Head from "next/head";
 import {
-  AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
   AiFillGithub,
   AiFillMail,
   AiFillMediumSquare,
-  AiFillMediumCircle,
   AiFillInstagram,
 } from "react-icons/ai";
 // import { useState } from "react";
