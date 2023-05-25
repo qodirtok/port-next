@@ -93,21 +93,29 @@ export default function Home() {
               job="Student Intern"
               company="University Of Muhammadiyah Malang"
               date="May 2015 - Aug 2015"
-              about={["asd"]}
+              about={[
+                "Develop web server with Linux OS and Apache",
+                "Maintain network",
+              ]}
               system={["Linux", "Debian", "Apache"]}
             />
             <ListService
               job="Student Intern"
               company="Dinas Komunikasi dan Informatika"
               date="Jan 2019 - Feb 2019"
-              about={["asd"]}
+              about={["Develop web Application for survey"]}
               system={["PHP", "CodeIgniter", "MySQL", "JavaScript", "HTML/CSS"]}
             />
             <ListService
               job="Fulltime Software Engineer"
               company="Icube by Sirclo"
               date="Jun 2020 - now"
-              about={["asd"]}
+              about={[
+                "Develop eCommerce apps",
+                "Reduce respond time Rest Api",
+                "Create custom plugin ",
+                "Guided my juniors to solve coding problems they face",
+              ]}
               system={[
                 "PHP",
                 "Magento 2",
@@ -169,7 +177,9 @@ const ListService = (params) => {
       <h4 className="py-1 text-lg font-thin pt-1 pb-0">{params.company}</h4>
       <span className="py-1 text-xs font-serif pt-1 pb-2">{params.date}</span>
       <div>
-        <ul>{params.about.map((about) => rollCallAbout(about))}</ul>
+        <ul className="list-disc text-left">
+          {params.about.map((about) => rollCallAbout(about))}
+        </ul>
       </div>
       {/* <p className="py-1 text-justify">{params.about}</p> */}
       <div className="flex flex-col gap-1 py-2 lg:flex-row lg:flex-wrap">
@@ -185,7 +195,7 @@ const ListPorto = (params) => {
       <h3 className="text-lg font-medium pt-8 pb-0">{params.name}</h3>
       <span className="py-1 text-xs font-serif pt-1 pb-2">{params.date}</span>
       <div>
-        <ul>
+        <ul className="list-disc text-left">
           {params.descriptions.map((descriptions) =>
             rollCallAbout(descriptions)
           )}
@@ -203,7 +213,7 @@ const ListPorto = (params) => {
 const rollCallAbout = (elements) => {
   return (
     <li>
-      <p className="py-0 text-justify">{elements}</p>
+      <p className="">{elements}</p>
     </li>
   );
 };
