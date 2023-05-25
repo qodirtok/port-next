@@ -54,7 +54,7 @@ export default function Home() {
             <p className="text-md py-5 leading-8 md:text-xl max-w-lg mx-auto">
               I&apos;m a developer with 3 year experience, speciality in
               developing eCommerce apps for several companies. currently working
-              as a backend Engineer on from{" "}
+              as a backend Engineer from{" "}
               <span className="text-blue-400"> Malang East Java</span>.
             </p>
           </div>
