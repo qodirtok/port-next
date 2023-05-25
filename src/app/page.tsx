@@ -58,7 +58,7 @@ export default function Home() {
               <span className="text-blue-400"> Malang East Java</span>.
             </p>
           </div>
-          <div className="text-5xl flex items-center lg:flex lg:justify-center gap-10 py-3">
+          <div className="text-5xl flex justify-center items-center lg:flex lg:justify-center gap-10 py-3">
             <Link
               href={
                 "https://www.linkedin.com/in/abdul-qhodir-zaelany-4531641b2/"
