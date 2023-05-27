@@ -68,8 +68,8 @@ const ItemsExpertise = () => {
 };
 
 const Items = (props) => {
-  return props.items.map((list) => (
-    <div className="flex flex-row items-center p-0 gap-[8px] ">
+  return props.items.map((list, index) => (
+    <div key={index} className="flex flex-row items-center p-0 gap-[8px] ">
       {list.logo}
       <h3
         style={{

@@ -43,8 +43,8 @@ export default function Footer() {
 }
 
 const List = (props) => {
-  return props.content.map((val) => (
-    <Link href={val.link}>
+  return props.content.map((val, index) => (
+    <Link key={index} href={val.link}>
       {val.name}
       <em>{val.slash ? val.slash : ""}</em>
     </Link>

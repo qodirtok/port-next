@@ -34,20 +34,20 @@ const Nav = () => {
 };
 
 const List = (props) => {
-  return props.options.map((lis) =>
-    OptionList(props.css, lis.link, lis.name, lis.target)
+  return props.options.map((lis, index) =>
+    OptionList(index, props.css, lis.link, lis.name, lis.target)
   );
 };
 
-const OptionList = (css, link, name, targets) => {
+const OptionList = (index, css, link, name, targets) => {
   return targets != "_blank" ? (
-    <li>
+    <li key={index}>
       <Link className={css ? css : ""} href={link}>
         {name}
       </Link>
     </li>
   ) : (
-    <li>
+    <li key={index}>
       <Link className={css ? css : ""} href={link} target="_blank">
         {name}
       </Link>
@@ -206,8 +206,9 @@ const Button = () => {
 };
 
 const ButtonOptions = (props) => {
-  return props.options.map((option) => (
+  return props.options.map((option, index) => (
     <Link
+      key={index}
       className={props.css}
       href={option.link}
       style={{

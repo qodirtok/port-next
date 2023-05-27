@@ -60,12 +60,14 @@ const Content = () => {
       <ListContent
         contents={[
           {
+            id: 1,
             title: "Backend Engineer - ICUBE",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "May 2015 - Aug 2015",
           },
           {
+            id: 2,
             title: "Backend Engineer - ICUBE",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -78,8 +80,11 @@ const Content = () => {
 };
 
 const ListContent = (props) => {
-  return props.contents.map((content) => (
-    <div className="flex flex-row items-center p-[40px] gap-[40px] hover:shadow-lg rounded-[12px] box-border bg-[#FFFFFF] hover:border-[#2061F0] hover:border-solid hover:border-[1px]">
+  return props.contents.map((content, index) => (
+    <div
+      key={index}
+      className="flex flex-row items-center p-[40px] gap-[40px] hover:shadow-lg rounded-[12px] box-border bg-[#FFFFFF] hover:border-[#2061F0] hover:border-solid hover:border-[1px]"
+    >
       <div className="flex flex-col justify-center items-start p-0 gap-[24px]">
         {/* meta */}
         <div className="flex flex-col items-start p-0 gap-[12px]">
