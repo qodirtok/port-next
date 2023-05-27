@@ -20,6 +20,20 @@ body {
   margin: 0;
 }
 
+a.hoper:hover {
+  background-color: #2061f0;
+
+  /* fill: #ffffff; */
+}
+
+a.hoper:hover svg {
+  fill: #ffffff;
+}
+
+a.hoper svg {
+  fill: #161616;
+}
+
 /* body {
   padding: 140px 0px 140px 0px;
 } */
