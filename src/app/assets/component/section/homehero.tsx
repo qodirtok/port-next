@@ -213,6 +213,7 @@ const Button = () => {
 const ButtonOptions = (props) => {
   return props.options.map((option, index) => (
     <div
+      key={index}
       className="
       relative
       before:content-[attr(data-tip)]
@@ -243,7 +244,6 @@ const ButtonOptions = (props) => {
     >
       <Link
         data-tooltip-target="tooltip-default"
-        key={index}
         className={props.css}
         href={option.link}
         style={{
