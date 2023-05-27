@@ -36,7 +36,7 @@ const Title = () => {
             color: "#161616",
           }}
         >
-          My Experience
+          Latest Project
         </h3>
       </div>
       <p
