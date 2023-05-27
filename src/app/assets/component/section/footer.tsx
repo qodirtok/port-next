@@ -17,10 +17,14 @@ export default function Footer() {
       >
         <List
           content={[
-            { link: "#", name: "Github", slash: "/" },
-            { link: "#", name: "Email", slash: "/" },
-            { link: "#", name: "Linkedin", slash: "/" },
-            { link: "#", name: "Medium" },
+            { link: "https://github.com/qodirtok", name: "Github", slash: "/" },
+            { link: "mailto:qodirtok@gmail.com", name: "Email", slash: "/" },
+            {
+              link: "https://www.linkedin.com/in/abdul-qhodir-zaelany-4531641b2/",
+              name: "Linkedin",
+              slash: "/",
+            },
+            { link: "https://medium.com/@qodirtok", name: "Medium" },
           ]}
         />
       </p>{" "}
@@ -44,7 +48,7 @@ export default function Footer() {
 
 const List = (props) => {
   return props.content.map((val, index) => (
-    <Link key={index} href={val.link}>
+    <Link key={index} href={val.link} target="_blank">
       {val.name}
       <em>{val.slash ? val.slash : ""}</em>
     </Link>

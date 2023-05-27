@@ -57,7 +57,7 @@ const OptionList = (index, css, link, name, targets) => {
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center pt-[40px] pb-[40px] md:pt-[80px] lg:pt-[80px] sm:pb-[40px] md:pb-[40px] lg:pb-[140px] gap-[80px]">
+    <div className="flex flex-col md:flex-col lg:flex-row justify-between items-center pt-[40px] pb-[40px] md:pt-[80px] lg:pt-[80px] sm:pb-[40px] md:pb-[40px] lg:pb-[140px] gap-[80px]">
       {/* text and button Contact */}
       <div className="flex flex-col justify-center items-start p-0 gap-[120px]">
         {/* text */}
@@ -132,8 +132,8 @@ const Button = () => {
       options={[
         // ig
         {
-          name: "Instagram",
-          link: "#",
+          name: "qodirtok",
+          link: "https://www.instagram.com/qodirtok/",
           icon: (
             <svg
               width="18"
@@ -147,8 +147,8 @@ const Button = () => {
         },
         // github
         {
-          name: "Github",
-          link: "#",
+          name: "qodirtok",
+          link: "https://github.com/qodirtok",
           icon: (
             <svg
               width="20"
@@ -162,8 +162,8 @@ const Button = () => {
         },
         // linkedin
         {
-          name: "Linkedin",
-          link: "#",
+          name: "Abdul Qhodir Zaelany",
+          link: "https://www.linkedin.com/in/abdul-qhodir-zaelany-4531641b2/",
           icon: (
             <svg
               width="16"
@@ -177,8 +177,8 @@ const Button = () => {
         },
         // medium
         {
-          name: "Medium",
-          link: "#",
+          name: "@qodirtok",
+          link: "https://medium.com/@qodirtok",
           icon: (
             <svg
               width="16"
@@ -192,8 +192,8 @@ const Button = () => {
         },
         // mail
         {
-          name: "Email",
-          link: "#",
+          name: "qodirtok@gmail.com",
+          link: "mailto:qodirtok@gmail.com",
           icon: (
             <svg
               width="18"

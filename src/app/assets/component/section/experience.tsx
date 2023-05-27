@@ -60,21 +60,24 @@ const Content = () => {
       <ListContent
         contents={[
           {
-            id: 1,
             title: "Student Intern - University Of Muhammadiyah",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "May 2015 - Aug 2015",
           },
           {
-            id: 2,
             title: "Student Intern - Dinas Komunikasi dan Informatika",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "Jan 2019 - Feb 2019",
           },
           {
-            id: 3,
+            title: "Teacher - SMK Muhammadiyah 2 Malang",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            date: "April 2020 - April 2020",
+          },
+          {
             title: "Software Engineer - Icube by Sirclo",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",

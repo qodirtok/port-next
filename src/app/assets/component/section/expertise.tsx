@@ -10,6 +10,7 @@ import Gql from "../icon/expertice/gql.png";
 import RestApi from "../icon/expertice/restapi.png";
 import XMl from "../icon/expertice/xml.png";
 import Docker from "../icon/expertice/docker.jpg";
+import Golang from "../icon/expertice/golang.png";
 
 export default function Expertise() {
   return (
@@ -68,6 +69,7 @@ const ItemsExpertise = () => {
           { logo: RestApi, name: "Rest API" },
           { logo: XMl, name: "XML" },
           { logo: Docker, name: "Docker" },
+          { logo: Golang, name: "Golang" },
         ]}
       />
     </div>

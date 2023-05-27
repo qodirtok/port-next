@@ -58,7 +58,7 @@ const Title = () => {
 
 const Content = () => {
   return (
-    <div className="flex flex-wrap items-start p-0 gap-[40px]">
+    <div className="flex flex-wrap justify-between items-start p-0 gap-[40px]">
       <ListContent
         contents={[
           {
@@ -94,7 +94,7 @@ const Content = () => {
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "May 2015 - Aug 2015",
-            link: "#",
+            link: "https://gitlab.com/qodirtok/simnew",
           },
         ]}
       />
