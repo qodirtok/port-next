@@ -73,7 +73,7 @@ const Content = () => {
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "May 2015 - Aug 2015",
-            link: "#",
+            link: "https://gitlab.com/qodirtok/argomart",
           },
           {
             title: "POS (MIDOS)",
@@ -83,11 +83,11 @@ const Content = () => {
             link: "#",
           },
           {
-            title: "PBE (Sistem Pemerintahan Berbasis Elektronik)",
+            title: "SPBE (Sistem Pemerintahan Berbasis Elektronik)",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "May 2015 - Aug 2015",
-            link: "#",
+            link: "https://gitlab.com/qodirtok/spbe",
           },
           {
             title: "SIKOPMA (Sistem Informasi Koperasi Mahasiswa)",
@@ -106,7 +106,7 @@ const ListContent = (props) => {
   return props.contents.map((content, index) => (
     <div
       key={index}
-      className="box-border flex flex-row items-center p-[40px] gap-[40px] bg-[#FAFBFC] max-w-full hover:shadow-lg rounded-[12px] hover:border-[#2061F0] hover:border-solid hover:border-[1px] "
+      className="box-border flex flex-row items-center p-[40px] gap-[40px] bg-[#FAFBFC] max-w-[700px] max-h-full hover:shadow-lg rounded-[12px] hover:border-[#2061F0] hover:border-solid hover:border-[1px] "
     >
       {/* content */}
       <div className="flex flex-col justify-center items-start p-0 gap-[24px]">
