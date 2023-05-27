@@ -101,9 +101,9 @@ const Hero = () => {
               color: "#65666C",
             }}
           >
-            I'm a developer with 3 year experience, speciality in developing
-            eCommerce apps for several companies. currently working as a backend
-            Engineer from Malang East Java.
+            I&apos;m a developer with 3 year experience, speciality in
+            developing eCommerce apps for several companies. currently working
+            as a backend Engineer from Malang East Java.
           </p>
         </div>
         {/* button Contact */}
