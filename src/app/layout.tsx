@@ -5,8 +5,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portofolio",
-  description: "My portofolio",
+  title: "Portfolio",
+  description: "My Portfolio",
   viewport: "width=device-width, initial-scale=1.0",
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
           rel="stylesheet"
         />
-        <title>Portofolio</title>
+        <title>Portfolio</title>
       </head>
       <body className={inter.className}>{children}</body>
     </html>

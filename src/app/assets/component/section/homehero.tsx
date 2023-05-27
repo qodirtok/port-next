@@ -132,6 +132,7 @@ const Button = () => {
       options={[
         // ig
         {
+          name: "Instagram",
           link: "#",
           icon: (
             <svg
@@ -146,6 +147,7 @@ const Button = () => {
         },
         // github
         {
+          name: "Github",
           link: "#",
           icon: (
             <svg
@@ -160,6 +162,7 @@ const Button = () => {
         },
         // linkedin
         {
+          name: "Linkedin",
           link: "#",
           icon: (
             <svg
@@ -174,6 +177,7 @@ const Button = () => {
         },
         // medium
         {
+          name: "Medium",
           link: "#",
           icon: (
             <svg
@@ -188,6 +192,7 @@ const Button = () => {
         },
         // mail
         {
+          name: "Email",
           link: "#",
           icon: (
             <svg
@@ -207,19 +212,50 @@ const Button = () => {
 
 const ButtonOptions = (props) => {
   return props.options.map((option, index) => (
-    <Link
-      key={index}
-      className={props.css}
-      href={option.link}
-      style={{
-        boxSizing: "border-box",
-        borderRadius: "4px",
-        border: "1px solid #ECECEC",
-      }}
-      target="_blank"
+    <div
+      className="
+      relative
+      before:content-[attr(data-tip)]
+      before:absolute
+      before:px-3 before:py-2
+      before:left-1/2 before:py-2
+      before:w-max before:max-w-xs
+      before:-translate-x-1/2
+      before:-translate-y-full
+    before:bg-gray-700
+    before:text-white
+      before:rounded-md before:opacity-0
+      before:transition-all
+
+      after:absolute
+      after:left-1/2 after:-top-3
+      after:h-0 after:w-0
+      after:-translate-x-1/2 after:border-8
+      after:border-t-gray-700
+      after:border-l-transparent
+      after:border-r-transparent
+      after:border-b-transparent
+      after:opacity-0
+      after:transition-all
+
+      hover:before:opacity-100 hover:after:opacity-100"
+      data-tip={option.name}
     >
-      {option.icon}
-    </Link>
+      <Link
+        data-tooltip-target="tooltip-default"
+        key={index}
+        className={props.css}
+        href={option.link}
+        style={{
+          boxSizing: "border-box",
+          borderRadius: "4px",
+          border: "1px solid #ECECEC",
+        }}
+        target="_blank"
+      >
+        {option.icon}
+      </Link>
+    </div>
   ));
 };
 

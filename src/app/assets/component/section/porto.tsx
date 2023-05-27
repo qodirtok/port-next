@@ -62,14 +62,35 @@ const Content = () => {
       <ListContent
         contents={[
           {
-            title: "Backend Engineer - ICUBE",
+            title: "Sistem Perpustakaan",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "May 2015 - Aug 2015",
             link: "#",
           },
           {
-            title: "Backend Engineer - ICUBE",
+            title: "POS (AGROMART)",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            date: "May 2015 - Aug 2015",
+            link: "#",
+          },
+          {
+            title: "POS (MIDOS)",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            date: "May 2015 - Aug 2015",
+            link: "#",
+          },
+          {
+            title: "PBE (Sistem Pemerintahan Berbasis Elektronik)",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            date: "May 2015 - Aug 2015",
+            link: "#",
+          },
+          {
+            title: "SIKOPMA (Sistem Informasi Koperasi Mahasiswa)",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "May 2015 - Aug 2015",
@@ -85,7 +106,7 @@ const ListContent = (props) => {
   return props.contents.map((content, index) => (
     <div
       key={index}
-      className="box-border flex flex-row items-center p-[40px] gap-[40px] bg-[#FAFBFC] max-w-[580px] max-h-[364px] hover:shadow-lg rounded-[12px] hover:border-[#2061F0] hover:border-solid hover:border-[1px] "
+      className="box-border flex flex-row items-center p-[40px] gap-[40px] bg-[#FAFBFC] max-w-[580px] hover:shadow-lg rounded-[12px] hover:border-[#2061F0] hover:border-solid hover:border-[1px] "
     >
       {/* content */}
       <div className="flex flex-col justify-center items-start p-0 gap-[24px]">

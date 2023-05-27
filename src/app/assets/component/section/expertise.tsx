@@ -55,19 +55,19 @@ const TextExpertise = () => {
 
 const ItemsExpertise = () => {
   return (
-    <div className="flex flex-wrap items-end justify-between p-0 gap-[40px]">
+    <div className="flex flex-wrap items-start justify-start p-0 gap-[40px]">
       <Items
         items={[
-          { logo: <Image src={Magento} alt="" />, name: "Magento" },
-          { logo: <Image src={Php} alt="" />, name: "PHP" },
-          { logo: <Image src={HTML} alt="" />, name: "HTML" },
-          { logo: <Image src={Css} alt="" />, name: "CSS" },
-          { logo: <Image src={JScript} alt="" />, name: "Java Script" },
-          { logo: <Image src={Mysql} alt="" />, name: "MySQL" },
-          { logo: <Image src={Gql} alt="" />, name: "GraphQL" },
-          { logo: <Image src={RestApi} alt="" />, name: "Rest API" },
-          { logo: <Image src={XMl} alt="" />, name: "XML" },
-          { logo: <Image src={Docker} alt="" />, name: "Docker" },
+          { logo: Magento, name: "Magento" },
+          { logo: Php, name: "PHP" },
+          { logo: HTML, name: "HTML" },
+          { logo: Css, name: "CSS" },
+          { logo: JScript, name: "Java Script" },
+          { logo: Mysql, name: "MySQL" },
+          { logo: Gql, name: "GraphQL" },
+          { logo: RestApi, name: "Rest API" },
+          { logo: XMl, name: "XML" },
+          { logo: Docker, name: "Docker" },
         ]}
       />
     </div>
@@ -76,8 +76,11 @@ const ItemsExpertise = () => {
 
 const Items = (props) => {
   return props.items.map((list, index) => (
-    <div key={index} className="flex flex-row items-center p-0 gap-[8px] ">
-      {list.logo}
+    <div
+      key={index}
+      className="flex flex-row items-center p-0 gap-[8px] w-[164px] h-[40px] transition ease-in-out hover:scale-110"
+    >
+      <Image src={list.logo} alt="" />
       <h3
         style={{
           fontStyle: "normal",
