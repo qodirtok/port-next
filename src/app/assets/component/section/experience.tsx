@@ -48,7 +48,7 @@ const Title = () => {
           color: "#65666C",
         }}
       >
-        Start From 2020 - 2023
+        Start From 2015 - 2023
       </p>
     </div>
   );
