@@ -40,7 +40,8 @@ export default function Footer() {
           color: "#434345",
         }}
       >
-        Abdul Qhodir Zaelany&copy;<em>{new Date().getFullYear()}</em>
+        Abdul Qhodir Zaelany&copy;
+        <em>{new Date().getFullYear()}</em>
       </p>
     </>
   );
