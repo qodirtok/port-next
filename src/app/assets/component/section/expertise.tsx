@@ -14,7 +14,7 @@ import Golang from "../icon/expertice/golang.png";
 
 export default function Expertise() {
   return (
-    <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between items-center md:items-start lg:items-start p-0 gap-[40px]">
+    <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between items-center md:items-center lg:items-start p-0 gap-[40px]">
       {/* text */}
       <TextExpertise />
       <ItemsExpertise />
@@ -56,7 +56,7 @@ const TextExpertise = () => {
 
 const ItemsExpertise = () => {
   return (
-    <div className="flex flex-wrap items-start justify-start p-0 gap-[40px]">
+    <div className="flex flex-wrap items-center md:items-center lg:items-start justify-between md:justify-between lg:justify-start  p-0 gap-[40px]">
       <Items
         items={[
           { logo: Magento, name: "Magento" },

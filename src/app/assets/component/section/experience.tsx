@@ -9,7 +9,7 @@ export default function Experience() {
 
 const Title = () => {
   return (
-    <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center p-0  ">
+    <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between items-center p-0  ">
       <div className="flex flex-row items-center p-0 gap-[8px] w-[423px] h-[48px]">
         <svg
           width="80"
