@@ -58,7 +58,7 @@ const Title = () => {
 
 const Content = () => {
   return (
-    <div className="flex flex-auto justify-between items-start p-0 gap-[40px]">
+    <div className="flex flex-wrap items-start gap-[40px]">
       <ListContent
         contents={[
           {
@@ -104,9 +104,9 @@ const Content = () => {
 
 const ListContent = (props) => {
   return props.contents.map((content, index) => (
-    <div
+    <article
       key={index}
-      className="box-border flex flex-row items-center p-[40px] gap-[40px] bg-[#FAFBFC] min-w-[580px] max-w-full max-h-full hover:shadow-lg rounded-[12px] hover:border-[#2061F0] hover:border-solid hover:border-[1px] "
+      className="box-border flex flex-col items-center p-[40px] gap-[40px] bg-[#FAFBFC] hover:shadow-lg rounded-[12px] hover:border-[#2061F0] hover:border-solid hover:border-[1px] w-full "
     >
       {/* content */}
       <div className="flex flex-col justify-center items-start p-0 gap-[24px]">
@@ -173,6 +173,6 @@ const ListContent = (props) => {
           </svg>
         </div>
       </div>
-    </div>
+    </article>
   ));
 };
