@@ -60,33 +60,34 @@ const Content = () => {
       <ListContent
         contents={[
           {
-            title: "Student Intern - University of Muhammadiyah Malang",
+            title:
+              "Student Intern - UPT Perpustakaan University of Muhammadiyah Malang",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "developing and making a web server using linux server, and i have learning how to organize book on shelves",
             date: "May 2015 - Aug 2015",
           },
           {
             title: "Student Intern - Dinas Komunikasi dan Informatika",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "Developing and designing a web apps about sorvey of conditions and suggestions regarding the divisions",
             date: "Jan 2019 - Feb 2019",
           },
           {
             title: "Teacher - SMK Muhammadiyah 2 Malang",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "serving my self into learning and teaching about computer and web studies",
             date: "April 2020 - April 2020",
           },
           {
             title: "Part Time - Galeri Bursa Efek Indonesia (GI BEI)",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "learning about how to calculate assets investation in another place",
             date: "April 2020 - April 2020",
           },
           {
             title: "Software Engineer - Icube by Sirclo",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "Making a lot of custom plugin, maintaning a working application, reducing respond time from 20 second to 5 second, reducing search data using algolia search, custom indexing data with algolia search and developing Rest API and Graphqls",
             date: "Jun 2020 - now",
           },
         ]}
