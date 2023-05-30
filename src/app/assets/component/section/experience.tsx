@@ -60,7 +60,7 @@ const Content = () => {
       <ListContent
         contents={[
           {
-            title: "Student Intern - University Of Muhammadiyah",
+            title: "Student Intern - University of Muhammadiyah Malang",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "May 2015 - Aug 2015",
@@ -73,6 +73,12 @@ const Content = () => {
           },
           {
             title: "Teacher - SMK Muhammadiyah 2 Malang",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            date: "April 2020 - April 2020",
+          },
+          {
+            title: "Part Time - Galeri Bursa Efek Indonesia (GI BEI)",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             date: "April 2020 - April 2020",
