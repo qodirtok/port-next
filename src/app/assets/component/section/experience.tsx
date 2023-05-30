@@ -100,7 +100,7 @@ const ListContent = (props) => {
   return props.contents.map((content, index) => (
     <div
       key={index}
-      className="flex flex-row items-center p-[40px] gap-[40px] hover:shadow-lg rounded-[12px] box-border bg-[#FFFFFF] hover:border-[#2061F0] hover:border-solid hover:border-[1px]"
+      className="flex flex-row items-center p-[40px] gap-[40px] hover:shadow-lg rounded-[12px] box-border bg-[#FFFFFF] hover:border-[#2061F0] hover:border-solid hover:border-[1px] w-full"
     >
       <div className="flex flex-col justify-center items-start p-0 gap-[24px]">
         {/* meta */}
