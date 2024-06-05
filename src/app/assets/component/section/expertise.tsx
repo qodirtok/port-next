@@ -60,6 +60,8 @@ const ItemsExpertise = () => {
       <Items
         items={[
           { logo: Magento, name: "Magento" },
+          { logo: "", name: "Laravel" },
+          { logo: "", name: "CodeIgniter" },
           { logo: Php, name: "PHP" },
           { logo: HTML, name: "HTML" },
           { logo: Css, name: "CSS" },
