@@ -71,6 +71,7 @@ const ItemsExpertise = () => {
           { logo: RestApi, name: "Rest API" },
           { logo: XMl, name: "XML" },
           { logo: Docker, name: "Docker" },
+          { logo: "", name: "N8N" },
           { logo: Golang, name: "Golang" },
         ]}
       />
