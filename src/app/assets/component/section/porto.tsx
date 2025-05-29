@@ -62,6 +62,13 @@ const Content = () => {
       <ListContent
         contents={[
           {
+            title: "POS (Royal Laundry)",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            date: "Nov 2024 - Dec 2024",
+            link: "https://github.com/qodirtok/next-pos",
+          },
+          {
             title: "Sistem Perpustakaan",
             about:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
