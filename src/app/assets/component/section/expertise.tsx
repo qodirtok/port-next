@@ -73,6 +73,7 @@ const ItemsExpertise = () => {
           { logo: Docker, name: "Docker" },
           { logo: "", name: "N8N" },
           { logo: Golang, name: "Golang" },
+          { logo: "", name: "VueJs" },
         ]}
       />
     </div>
