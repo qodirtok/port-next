@@ -11,6 +11,10 @@ import RestApi from "../icon/expertice/restapi.png";
 import XMl from "../icon/expertice/xml.png";
 import Docker from "../icon/expertice/docker.jpg";
 import Golang from "../icon/expertice/golang.png";
+import Vue from "../icon/expertice/vuejs.png";
+import Laravel from "../icon/expertice/laravel.png";
+import Ci from "../icon/expertice/ci.png";
+import N8n from "../icon/expertice/n8n.png";
 
 export default function Expertise() {
   return (
@@ -60,8 +64,8 @@ const ItemsExpertise = () => {
       <Items
         items={[
           { logo: Magento, name: "Magento" },
-          { logo: "", name: "Laravel" },
-          { logo: "", name: "CodeIgniter" },
+          { logo: Laravel, name: "Laravel" },
+          { logo: Ci, name: "CodeIgniter" },
           { logo: Php, name: "PHP" },
           { logo: HTML, name: "HTML" },
           { logo: Css, name: "CSS" },
@@ -71,9 +75,9 @@ const ItemsExpertise = () => {
           { logo: RestApi, name: "Rest API" },
           { logo: XMl, name: "XML" },
           { logo: Docker, name: "Docker" },
-          { logo: "", name: "N8N" },
+          { logo: N8n, name: "N8N" },
           { logo: Golang, name: "Golang" },
-          { logo: "", name: "VueJs" },
+          { logo: Vue, name: "VueJs" },
         ]}
       />
     </div>
