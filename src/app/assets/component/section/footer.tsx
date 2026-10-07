@@ -49,7 +49,13 @@ export default function Footer() {
 
 const List = (props) => {
   return props.content.map((val, index) => (
-    <Link key={index} href={val.link} target="_blank">
+    <Link
+      key={index}
+      href={val.link}
+      {...(val.link.startsWith("http")
+        ? { target: "_blank", rel: "noopener noreferrer" }
+        : {})}
+    >
       {val.name}
       <em>{val.slash ? val.slash : ""}</em>
     </Link>

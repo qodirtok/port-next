@@ -50,7 +50,7 @@ const Title = () => {
           color: "#65666C",
         }}
       >
-        Start From 2015 - 2024
+        Start From 2015 - Present
       </p>
     </div>
   );
@@ -64,43 +64,40 @@ const Content = () => {
           {
             title: "POS (Royal Laundry)",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "Point-of-sale app for a laundry business, built with Next.js — order management, transactions, and daily sales reporting.",
             date: "Nov 2024 - Dec 2024",
             link: "https://github.com/qodirtok/next-pos",
           },
           {
             title: "Sistem Perpustakaan",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "Web-based library system from my internship at the UMM library: book catalog search, borrower records, and lending/return transactions.",
             date: "May 2015 - Aug 2015",
-            link: "#",
           },
           {
             title: "POS (AGROMART)",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            date: "May 2015 - Aug 2015",
+              "Point-of-sale system for Argomart at Universitas Kanjuruan Malang: transactions, stock, and sales reports.",
+            date: "2020",
             link: "https://gitlab.com/qodirtok/argomart",
           },
           {
             title: "POS (MIDOS)",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            date: "May 2015 - Aug 2015",
-            link: "#",
+              "Point-of-sale application for managing transactions and daily sales reports.",
           },
           {
             title: "SPBE (Sistem Pemerintahan Berbasis Elektronik)",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            date: "May 2015 - Aug 2015",
+              "Electronic-government system for regional administration: data and reporting services for local government agencies.",
+            date: "2020",
             link: "https://gitlab.com/qodirtok/spbe",
           },
           {
             title: "SIKOPMA (Sistem Informasi Koperasi Mahasiswa)",
             about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            date: "May 2015 - Aug 2015",
+              "Information system for the student cooperative: member records, savings and loan transactions, and reporting.",
+            date: "2020 - 2021",
             link: "https://gitlab.com/qodirtok/simnew",
           },
         ]}
@@ -147,38 +144,41 @@ const ListContent = (props) => {
           </p>
         </div>
         {/* date */}
-        <p>{content.date}</p>
+        {content.date && <p>{content.date}</p>}
 
-        <div className="flex flex-row items-center p-0 gap-[12px]">
-          <Link
-            href={content.link}
-            style={{
-              fontStyle: "normal",
-              fontWeight: "500",
-              fontSize: "18px",
-              lineHeight: "28px",
-              display: "flex",
-              alignItems: "center",
-              letterSpacing: "0.2px",
-              color: "#2061F0",
-            }}
-            target="_blank"
-          >
-            Link Project
-          </Link>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16.172 10.9999L10.808 5.63592L12.222 4.22192L20 11.9999L12.222 19.7779L10.808 18.3639L16.172 12.9999H4V10.9999H16.172Z"
-              fill="#2061F0"
-            />
-          </svg>
-        </div>
+        {content.link && (
+          <div className="flex flex-row items-center p-0 gap-[12px]">
+            <Link
+              href={content.link}
+              style={{
+                fontStyle: "normal",
+                fontWeight: "500",
+                fontSize: "18px",
+                lineHeight: "28px",
+                display: "flex",
+                alignItems: "center",
+                letterSpacing: "0.2px",
+                color: "#2061F0",
+              }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Link Project
+            </Link>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.172 10.9999L10.808 5.63592L12.222 4.22192L20 11.9999L12.222 19.7779L10.808 18.3639L16.172 12.9999H4V10.9999H16.172Z"
+                fill="#2061F0"
+              />
+            </svg>
+          </div>
+        )}
       </div>
     </article>
   ));

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { log } from "console";
 import Image from "next/image";
 // import Ig from "./assets/component/icon/ig.svg";
 import Instagram from "../icon/ig.svg";
@@ -7,9 +6,9 @@ import Instagram from "../icon/ig.svg";
 const Nav = () => {
   return (
     <nav className="flex lg:flex-row justify-between items-center py-[16px] md:py-[30px] lg:py-[30px]  bg-[#F7F9FF]">
-      <h1 className="font-[600] text-[20px] leading-[28px] text-[#161616]">
+      <div className="font-[600] text-[20px] leading-[28px] text-[#161616]">
         ZLNS
-      </h1>
+      </div>
 
       <ul
         id="navbar-default"
@@ -48,7 +47,12 @@ const OptionList = (index, css, link, name, targets) => {
     </li>
   ) : (
     <li key={index}>
-      <Link className={css ? css : ""} href={link} target="_blank">
+      <Link
+        className={css ? css : ""}
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {name}
       </Link>
     </li>
@@ -94,16 +98,16 @@ const Hero = () => {
             style={{
               fontStyle: "normal",
               fontWeight: "400",
-              fontSize: "24",
+              fontSize: "24px",
               lineHeight: "32px",
               display: "flex",
               alignItems: "center",
               color: "#65666C",
             }}
           >
-            I&apos;m a developer with 4 year experience, speciality in
-            developing eCommerce apps for several companies. currently working
-            as a backend Engineer from Malang East Java.
+            I&apos;m a backend engineer with 4+ years of experience building
+            eCommerce apps for several companies. Currently working from
+            Malang, East Java.
           </p>
         </div>
         {/* button Contact */}
@@ -116,7 +120,7 @@ const Hero = () => {
         style={{ height: "100%", width: "100%" }}
         className="max-w-[560px] max-h-[648px] h-screen w-screen relative"
         src="/image.png"
-        alt=""
+        alt="Abdul Qhodir Zaelany"
         width={0}
         height={0}
         layout="responsive"
@@ -251,7 +255,8 @@ const ButtonOptions = (props) => {
           borderRadius: "4px",
           border: "1px solid #ECECEC",
         }}
-        target="_blank"
+        target={option.link.startsWith("http") ? "_blank" : undefined}
+        rel="noopener noreferrer"
       >
         {option.icon}
       </Link>

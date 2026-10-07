@@ -48,7 +48,7 @@ const Title = () => {
           color: "#65666C",
         }}
       >
-        Start From 2015 - 2024
+        Start From 2015 - Present
       </p>
     </div>
   );
@@ -63,31 +63,31 @@ const Content = () => {
             title:
               "Student Intern - UPT Perpustakaan University of Muhammadiyah Malang",
             about:
-              "developing and making a web server using linux server, and i have learning how to organize book on shelves",
+              "Set up a Linux web server for the library and helped organize the book collection.",
             date: "May 2015 - Aug 2015",
           },
           {
             title: "Student Intern - Dinas Komunikasi dan Informatika",
             about:
-              "Developing and designing a web apps about sorvey of conditions and suggestions regarding the divisions",
+              "Built a web app to collect surveys on conditions and suggestions from each division.",
             date: "Jan 2019 - Feb 2019",
           },
           {
             title: "Teacher - SMK Muhammadiyah 2 Malang",
             about:
-              "serving my self into learning and teaching about computer and web studies",
+              "Taught computer and web development basics to high school students.",
             date: "April 2020 - April 2020",
           },
           {
             title: "Part Time - Galeri Bursa Efek Indonesia (GI BEI)",
             about:
-              "learning about how to calculate assets investation in another place",
+              "Learned how to calculate and track investment assets.",
             date: "April 2020 - April 2020",
           },
           {
             title: "Software Engineer - Icube by Sirclo",
             about:
-              "Making a lot of custom plugin, maintaning a working application, reducing respond time from 20 second to 5 second, reducing search data using algolia search, custom indexing data with algolia search and developing Rest API and Graphqls",
+              "Built custom plugins and maintained production applications, cut API response time from 20 seconds to 5 seconds, integrated Algolia search with custom indexing, and developed REST and GraphQL APIs.",
             date: "Jun 2020 - now",
           },
         ]}
